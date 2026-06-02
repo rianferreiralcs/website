@@ -1,6 +1,7 @@
 "use client"
 import Footer from "@/components/Footer"
 <Footer />
+import ContactForm from "@/components/ContactForm"
 import { useEffect, useState } from "react"
 import { FaInstagram, FaYoutube, FaLinkedin, FaWhatsapp } from "react-icons/fa6"
 import { MdEmail } from "react-icons/md"
@@ -447,23 +448,9 @@ export default function Home() {
             </div>
 
             <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-10">
+              
               <h3 className="mb-7 text-xl font-bold text-zinc-900">Entre em contato</h3>
-              <div className="space-y-5">
-                {[
-                  { label: "Nome completo", type: "text", placeholder: "Seu nome" },
-                  { label: "E-mail", type: "email", placeholder: "seu@email.com" },
-                  { label: "Telefone", type: "tel", placeholder: "(00) 00000-0000" },
-                ].map((field) => (
-                  <div key={field.label} className="flex flex-col gap-1.5">
-                    <label className="text-xs font-semibold uppercase tracking-widest text-zinc-400">{field.label}</label>
-                    <input type={field.type} placeholder={field.placeholder} className="w-full rounded-xl border border-zinc-200 bg-white px-5 py-3.5 text-sm text-zinc-900 outline-none placeholder:text-zinc-400 focus:border-purple-500 focus:ring-2 focus:ring-purple-100" />
-                  </div>
-                ))}
-                <button className="mt-2 w-full rounded-xl bg-purple-600 py-4 text-sm font-semibold text-white transition hover:bg-purple-700 hover:shadow-lg hover:shadow-purple-200">
-                  Enviar mensagem →
-                </button>
-                <p className="text-center text-xs text-zinc-400">Seus dados não serão compartilhados com terceiros.</p>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </div>

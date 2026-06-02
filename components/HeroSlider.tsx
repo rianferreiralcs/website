@@ -212,6 +212,14 @@ export default function HeroSlider() {
 
                 </a>
 
+                {/* BOTÃO DOE AGORA */}
+                <button
+                  onClick={() => window.dispatchEvent(new CustomEvent("openDonationModal"))}
+                  className="mt-4 inline-block rounded-full border-2 border-white px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-black md:ml-4 md:mt-10 md:px-8 md:py-4"
+                >
+                  Doe agora
+                </button>
+
               </div>
 
             </div>

@@ -11,10 +11,26 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
-  title: "Projeto Ninho",
-  description: "Transformando vidas através da educação",
+  title: "Projeto Ninho — Transformando vidas através da educação",
+  description: "O Projeto Ninho cria oportunidades reais para crianças e famílias em situação de vulnerabilidade social, promovendo educação de excelência, fortalecimento familiar e desenvolvimento comunitário em Lagoa Santa/MG.",
+  keywords: ["projeto social", "ONG", "educação", "Lagoa Santa", "doação", "vulnerabilidade social", "Projeto Ninho"],
+  openGraph: {
+    title: "Projeto Ninho — Transformando vidas através da educação",
+    description: "Ajude a construir um futuro melhor para crianças e famílias em vulnerabilidade social.",
+    url: "https://www.projetoninho.org",
+    siteName: "Projeto Ninho",
+    images: [
+      {
+        url: "https://www.projetoninho.org/images/logoPadrao.png",
+        width: 1200,
+        height: 630,
+        alt: "Projeto Ninho",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
 }
-
 export default function RootLayout({
   children,
 }: Readonly<{
